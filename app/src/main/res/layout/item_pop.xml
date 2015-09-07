@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white_pressed"
+    >
+  <LinearLayout
+      android:id="@+id/pop"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_alignParentLeft="true"
+      android:background="@drawable/grid_item_bg"
+      android:padding="6dp"
+      >
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/normal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/normal"
+        />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/satellite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/satellite"
+        />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/night"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/night"
+        />
+  </LinearLayout>
+    <ImageView
+        android:id="@+id/tosee"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@mipmap/tosee"
+        />
+</LinearLayout>

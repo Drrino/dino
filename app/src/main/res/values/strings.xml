@@ -1,0 +1,27 @@
+<resources>
+
+  <string name="open">open</string>
+  <string name="close">close</string>
+
+  <string name="app_name">DinoDemo</string>
+  <string name="action_settings">Settings</string>
+  <string name="name">Name：</string>
+  <string name="test">Captchas：</string>
+  <string name="getNumber">Get Captchas</string>
+  <string name="password">Password：</string>
+  <string name="register">Register</string>
+  <string name="login">Login</string>
+  <string name="into">Enter</string>
+
+  <string name="headsup_content">Content</string>
+  <string name="headsup_title">Title</string>
+  <string name="item_text1">Map</string>
+  <string name="item_text2">item</string>
+  <string name="item_text3">item</string>
+
+  <string name="normal">Normal</string>
+  <string name="satellite">Satellite</string>
+  <string name="night">Night</string>
+  <string name="search">Search</string>
+
+</resources>
