@@ -16,12 +16,27 @@
   <string name="headsup_content">Content</string>
   <string name="headsup_title">Title</string>
   <string name="item_text1">Map</string>
-  <string name="item_text2">item</string>
-  <string name="item_text3">item</string>
+  <string name="item_text2">Video</string>
+  <string name="item_text3">Date</string>
 
   <string name="normal">Normal</string>
   <string name="satellite">Satellite</string>
   <string name="night">Night</string>
   <string name="search">Search</string>
+
+  <string name="start">Start：</string>
+  <string name="end">End：</string>
+
+  <string name="inputStart">Input Start</string>
+  <string name="inputEnd">Input End</string>
+  <string name="setStart">Set Start</string>
+  <string name="setEnd">Set End</string>
+
+  <string name="walk">Walk</string>
+  <string name="drive">Drive</string>
+  <string name="bus">Bus</string>
+
+
+
 
 </resources>

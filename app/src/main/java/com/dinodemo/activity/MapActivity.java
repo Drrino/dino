@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 import butterknife.Bind;
@@ -58,7 +57,7 @@ import java.util.List;
 
 public class MapActivity extends AppCompatActivity
     implements LocationSource, AMapLocationListener, View.OnClickListener, AMap.OnMapClickListener,
-    AMap.OnMarkerClickListener, PoiSearch.OnPoiSearchListener, RadioGroup.OnCheckedChangeListener,
+    AMap.OnMarkerClickListener, PoiSearch.OnPoiSearchListener,
     RouteSearch.OnRouteSearchListener, GeocodeSearch.OnGeocodeSearchListener {
   private static final String TAG = "Tag";
   @Bind(R.id.map) MapView mapView;
@@ -338,20 +337,6 @@ public class MapActivity extends AppCompatActivity
     });
   }
 
-  @Override public void onCheckedChanged(RadioGroup group, int checkedId) {
-    switch (checkedId) {
-      case R.id.bus_rb:
-        routeType = 1;// 标识为公交模式
-        break;
-      case R.id.car_rb:
-        routeType = 2;// 标识为驾车模式
-        break;
-      case R.id.walk_rb:
-        routeType = 3;// 标识为步行模式
-        break;
-    }
-  }
-
   private void queryPopupWindow() {
     mQueryView = LayoutInflater.from(this).inflate(R.layout.route_pop, null);
     setStart = (EditText) mQueryView.findViewById(R.id.setStart);
@@ -367,9 +352,24 @@ public class MapActivity extends AppCompatActivity
     queryPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     int[] location = new int[2];
     mQueryView.getLocationOnScreen(location);
-    queryPopupWindow.showAtLocation(mQueryView, Gravity.CENTER, location[0], location[1] - queryPopupWindow.getHeight());
+    queryPopupWindow.showAtLocation(mQueryView, Gravity.CENTER, location[0],
+        location[1] - queryPopupWindow.getHeight());
     queryPopupWindow.update();
-    group.setOnCheckedChangeListener(this);
+    group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+      @Override public void onCheckedChanged(RadioGroup group, int checkedId) {
+        switch (checkedId) {
+          case R.id.bus_rb:
+            routeType = 1;// 标识为公交模式
+            break;
+          case R.id.car_rb:
+            routeType = 2;// 标识为驾车模式
+            break;
+          case R.id.walk_rb:
+            routeType = 3;// 标识为步行模式
+            break;
+        }
+      }
+    });
     addStartPlaceBtn.setOnClickListener(this);
     addEndPlaceBtn.setOnClickListener(this);
     goQuery.setOnClickListener(this);
@@ -513,7 +513,7 @@ public class MapActivity extends AppCompatActivity
    */
   public void searchRouteResult(LatLonPoint startPoint, LatLonPoint endPoint) {
     showProgressDialog();
-    RouteSearch.FromAndTo fromAndTo = new RouteSearch.FromAndTo(startPoint, endPoint);
+    final RouteSearch.FromAndTo fromAndTo = new RouteSearch.FromAndTo(startPoint, endPoint);
     routeSearch = new RouteSearch(this);
     routeSearch.setRouteSearchListener(this);
     if (routeType == 1) {// 公交路径规划
@@ -611,7 +611,8 @@ public class MapActivity extends AppCompatActivity
 
   @Override public void onGeocodeSearched(GeocodeResult geocodeResult, int i) {
     if (i == 0) {
-      if (geocodeResult != null && geocodeResult.getGeocodeAddressList() != null
+      if (geocodeResult != null
+          && geocodeResult.getGeocodeAddressList() != null
           && geocodeResult.getGeocodeAddressList().size() > 0) {
         LatLonPoint latLonPoint = geocodeResult.getGeocodeAddressList().get(0).getLatLonPoint();
         if (isStart) {

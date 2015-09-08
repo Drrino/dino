@@ -26,6 +26,7 @@
         android:name=".activity.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
@@ -33,6 +34,7 @@
     <activity android:name=".activity.MainActivity"/>
     <activity android:name=".activity.GuideActivity"/>
     <activity android:name=".activity.MapActivity"/>
+    <activity android:name=".activity.DateActivity"/>
     <receiver android:name=".receiver.AlarmReceiver"/>
   </application>
 

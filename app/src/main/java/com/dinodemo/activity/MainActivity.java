@@ -30,6 +30,7 @@ import uk.co.deanwild.materialshowcaseview.ShowcaseConfig;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
   private static final String SHOWCASE_ID = "dino";
+
   @Bind(R.id.mobileNumber) EditText mobileNumber;
   @Bind(R.id.password) EditText password;
   @Bind(R.id.test) EditText editCode;
