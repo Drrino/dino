@@ -24,8 +24,8 @@
   <string name="night">Night</string>
   <string name="search">Search</string>
 
-  <string name="start">Start：</string>
-  <string name="end">End：</string>
+  <string name="toStart">Start：</string>
+  <string name="toEnd">End：</string>
 
   <string name="inputStart">Input Start</string>
   <string name="inputEnd">Input End</string>
@@ -35,6 +35,14 @@
   <string name="walk">Walk</string>
   <string name="drive">Drive</string>
   <string name="bus">Bus</string>
+
+  <string name="add_alarm">Add alarm</string>
+  <string name="play_sound">Play Sound</string>
+  <string name="start">Start</string>
+  <string name="pause">Pause</string>
+  <string name="resume">Resume</string>
+  <string name="reset">Reset</string>
+  <string name="lap">Lap</string>
 
 
 

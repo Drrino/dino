@@ -9,5 +9,4 @@
   compile 'com.getbase:floatingactionbutton:1.10.0'     
   compile files('libs/MapApiServices.jar')    
   compile files('libs/AMap_ Location_v1.4.0_20150830.jar')    
-  compile files('libs/Android_Map_2.5.1.20150827.jar')       
-  compile 'cn.aigestudio.datepicker:DatePicker:2.0.2'
+  compile files('libs/Android_Map_2.5.1.20150827.jar')    

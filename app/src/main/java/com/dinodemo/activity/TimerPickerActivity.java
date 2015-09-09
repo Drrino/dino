@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
-import android.widget.FrameLayout;
 import android.widget.TabHost;
 import butterknife.Bind;
 import butterknife.ButterKnife;
