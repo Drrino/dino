@@ -34,7 +34,9 @@
     <activity android:name=".activity.MainActivity"/>
     <activity android:name=".activity.GuideActivity"/>
     <activity android:name=".activity.MapActivity"/>
-    <activity android:name=".activity.DateActivity"/>
+    <activity android:name=".activity.DatePickerActivity"/>
+    <activity android:name=".activity.TimerPickerActivity"/>
+
     <receiver android:name=".receiver.AlarmReceiver"/>
   </application>
 

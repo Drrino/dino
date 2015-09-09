@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     ButterKnife.bind(this);
     ml1.setOnClickListener(this);
     ml3.setOnClickListener(this);
+    ml2.setOnClickListener(this);
   }
 
   @Override public void onClick(View v) {
@@ -31,8 +32,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(new Intent().setClass(HomeActivity.this, MapActivity.class));
         finish();
         break;
+      case R.id.item_2:
+        startActivity(new Intent().setClass(HomeActivity.this, TimerPickerActivity.class));
+        finish();
+        break;
       case R.id.item_3:
-        startActivity(new Intent().setClass(HomeActivity.this, DateActivity.class));
+        startActivity(new Intent().setClass(HomeActivity.this, DatePickerActivity.class));
         finish();
         break;
     }
