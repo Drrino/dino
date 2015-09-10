@@ -105,7 +105,6 @@ public class TabStopWatch extends BaseTabFragment implements View.OnClickListene
         break;
       case R.id.btnSWPause:
         stopTimer();
-
         btnPause.setVisibility(View.GONE);
         btnResume.setVisibility(View.VISIBLE);
         btnLap.setVisibility(View.GONE);
@@ -113,7 +112,7 @@ public class TabStopWatch extends BaseTabFragment implements View.OnClickListene
         break;
       case R.id.btnSWLap:
         adapter.insert(
-            String.format("%d:%d:%d:%d", tenMSecs / 100 / 60 / 60, tenMSecs / 100 / 60 % 60,
+            String.format("%d:%d:%d.%d", tenMSecs / 100 / 60 / 60, tenMSecs / 100 / 60 % 60,
                 tenMSecs / 100 % 60, tenMSecs % 100), 0);
         break;
     }
@@ -151,8 +150,4 @@ public class TabStopWatch extends BaseTabFragment implements View.OnClickListene
     }
   };
 
-  @Override public void onPause() {
-    super.onPause();
-    handler.removeMessages(MSG_WHAT_SHOW_TIME);
-  }
 }

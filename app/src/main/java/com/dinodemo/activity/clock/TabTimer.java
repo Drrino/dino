@@ -222,5 +222,6 @@ public class TabTimer extends BaseTabFragment implements View.OnClickListener {
       }
     }
   };
+
 }
 

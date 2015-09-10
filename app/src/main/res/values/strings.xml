@@ -37,7 +37,7 @@
   <string name="bus">Bus</string>
 
   <string name="add_alarm">Add alarm</string>
-  <string name="play_sound">Play Sound</string>
+  <string name="play_sound">Play Sound And Press The Return Key To Exit</string>
   <string name="start">Start</string>
   <string name="pause">Pause</string>
   <string name="resume">Resume</string>

@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
     if (!isSet) {
       startActivity(new Intent(this, GuideActivity.class));
     } else {
-      startActivity(new Intent(this, TimerPickerActivity.class));
+      startActivity(new Intent(this, MainActivity.class));
     }
     finish();
   }

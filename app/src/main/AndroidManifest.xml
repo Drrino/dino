@@ -36,8 +36,10 @@
     <activity android:name=".activity.MapActivity"/>
     <activity android:name=".activity.DatePickerActivity"/>
     <activity android:name=".activity.TimerPickerActivity"/>
+    <activity android:name=".activity.clock.PlayAlarmAty"/>
 
     <receiver android:name=".receiver.AlarmReceiver"/>
+    <receiver android:name=".receiver.ClockReceiver"/>
   </application>
 
 </manifest>

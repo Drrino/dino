@@ -37,7 +37,7 @@ public class TabTime extends Fragment {
 
   private void refreshTime() {
     Calendar c = Calendar.getInstance();
-    tvTime.setText(String.format("%d:%d:%d",c.get(Calendar.HOUR_OF_DAY),c.get(Calendar.MINUTE),c.get(Calendar.SECOND)));
+    tvTime.setText(String.format("%d:%d:%02d",c.get(Calendar.HOUR_OF_DAY),c.get(Calendar.MINUTE),c.get(Calendar.SECOND)));
   }
 
   @Override public void onPause() {
