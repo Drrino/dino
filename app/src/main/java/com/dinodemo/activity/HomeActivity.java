@@ -3,8 +3,8 @@ package com.dinodemo.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.LinearLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.dinodemo.R;
@@ -13,9 +13,9 @@ import com.dinodemo.R;
  * Created by Coder on 2015/8/29.
  */
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-  @Bind(R.id.item_1) LinearLayout ml1;
-  @Bind(R.id.item_2) LinearLayout ml2;
-  @Bind(R.id.item_3) LinearLayout ml3;
+  @Bind(R.id.item_1) CardView ml1;
+  @Bind(R.id.item_2) CardView ml2;
+  @Bind(R.id.item_3) CardView ml3;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -30,15 +30,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     switch (v.getId()) {
       case R.id.item_1:
         startActivity(new Intent().setClass(HomeActivity.this, MapActivity.class));
-        finish();
         break;
       case R.id.item_2:
         startActivity(new Intent().setClass(HomeActivity.this, TimerPickerActivity.class));
-        finish();
         break;
       case R.id.item_3:
         startActivity(new Intent().setClass(HomeActivity.this, DatePickerActivity.class));
-        finish();
         break;
     }
   }

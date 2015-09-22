@@ -31,7 +31,6 @@ public class TimerPickerActivity extends FragmentActivity {
     setContentView(R.layout.fragmenttabtost);
     ButterKnife.bind(this);
     initTab();
-
   }
 
   private void initTab() {
@@ -39,7 +38,8 @@ public class TimerPickerActivity extends FragmentActivity {
     mTabHost.addTab(mTabHost.newTabSpec("tabTime").setIndicator("时钟"), TabTime.class, null);
     mTabHost.addTab(mTabHost.newTabSpec("tabAlarm").setIndicator("闹钟"), TabAlarm.class, null);
     mTabHost.addTab(mTabHost.newTabSpec("tabTimer").setIndicator("计时器"), TabTimer.class, null);
-    mTabHost.addTab(mTabHost.newTabSpec("tabStopWatch").setIndicator("秒表"), TabStopWatch.class, null);
+    mTabHost.addTab(mTabHost.newTabSpec("tabStopWatch").setIndicator("秒表"), TabStopWatch.class,
+        null);
     mTabHost.setCurrentTab(0);
 
     mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
@@ -59,11 +59,9 @@ public class TimerPickerActivity extends FragmentActivity {
     list.add(p4);
     mViewPager.setAdapter(new MenuAdapter(getSupportFragmentManager()));
     mViewPager.addOnPageChangeListener(new ViewPagerListener());
-
-
   }
 
-  class MenuAdapter extends FragmentStatePagerAdapter{
+  class MenuAdapter extends FragmentStatePagerAdapter {
     public MenuAdapter(FragmentManager fm) {
       super(fm);
     }

@@ -36,6 +36,7 @@ public class TabAlarm extends BaseTabFragment implements View.OnClickListener {
   private AlarmManager alarmManager;
   private ArrayAdapter<AlarmData> adapter;
   private static final String KEY_ALARM_LIST = "alarmList";
+  public boolean isClick = true;
 
   @Nullable @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
@@ -106,26 +107,24 @@ public class TabAlarm extends BaseTabFragment implements View.OnClickListener {
   private void addAlarm() {
     Calendar c = Calendar.getInstance();
     new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
-
       @Override public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        calendar.set(Calendar.MINUTE, minute);
-        calendar.set(Calendar.SECOND, 0);
-        calendar.set(Calendar.MILLISECOND, 0);
+          Calendar calendar = Calendar.getInstance();
+          calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
+          calendar.set(Calendar.MINUTE, minute);
+          calendar.set(Calendar.SECOND, 0);
+          calendar.set(Calendar.MILLISECOND, 0);
 
-        Calendar currentTime = Calendar.getInstance();
-        if (calendar.getTimeInMillis() <= currentTime.getTimeInMillis()) {
-          calendar.setTimeInMillis(calendar.getTimeInMillis() + 24 * 60 * 60 * 1000);
+          Calendar currentTime = Calendar.getInstance();
+          if (calendar.getTimeInMillis() <= currentTime.getTimeInMillis()) {
+            calendar.setTimeInMillis(calendar.getTimeInMillis() + 24 * 60 * 60 * 1000);
+          }
+
+          AlarmData ad = new AlarmData(calendar.getTimeInMillis());
+          adapter.add(ad);
+          alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, ad.getTime(), 5 * 60 * 1000,
+              PendingIntent.getBroadcast(getContext(), ad.getId(), new Intent(getContext(), ClockReceiver.class), 0));
+          saveAlarmList();
         }
-
-        AlarmData ad = new AlarmData(calendar.getTimeInMillis());
-        adapter.add(ad);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, ad.getTime(), 5 * 60 * 1000,
-            PendingIntent.getBroadcast(getContext(), ad.getId(),
-                new Intent(getContext(), ClockReceiver.class), 0));
-        saveAlarmList();
-      }
     }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show();
   }
 
