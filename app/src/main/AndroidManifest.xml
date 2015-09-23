@@ -37,6 +37,7 @@
     <activity android:name=".activity.DatePickerActivity"/>
     <activity android:name=".activity.TimerPickerActivity"/>
     <activity android:name=".activity.clock.PlayAlarmAty"/>
+    <activity android:name=".activity.FastScrollerActivity"/>
 
     <receiver android:name=".receiver.AlarmReceiver"/>
     <receiver android:name=".receiver.ClockReceiver"/>

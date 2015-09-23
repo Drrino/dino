@@ -11,4 +11,8 @@
   <color name="white">#fafafa</color>
   <color name="white_pressed">#f1f1f1</color>
   <color name="location">#039be5</color>
+  <color name="homeBg">#80cbc4</color>
+  <color name="refresh1">#ff9800</color>
+  <color name="refresh2">#F50057</color>
+  <color name="refresh3">#0097a7</color>
 </resources>

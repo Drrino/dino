@@ -18,6 +18,9 @@
   <string name="item_text1">Map</string>
   <string name="item_text2">Clock</string>
   <string name="item_text3">Date</string>
+  <string name="item_text4">FastScroller</string>
+  <string name="item_text5">Null</string>
+  <string name="item_text6">Null</string>
 
   <string name="normal">Normal</string>
   <string name="satellite">Satellite</string>

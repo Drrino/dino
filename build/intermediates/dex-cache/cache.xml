@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\classes-e898a8c77b30ec6f5b5257665830968559db8019.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\classes-696367c458a88dccf10d23c8e1187eb8c35142bc.jar" />
+    </item>
+    <item
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\classes-f166f18c5c67e615d5816afb6ebf8ffbad05517f.jar" />
+    </item>
+    <item
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-c7c11d5b1e1b3e30ffd8e0a415a593fb8c20b7b3.jar" />
+    </item>
+    <item
+        jar="F:\1.4SDKs\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-5a54d1dc90fe26ab157538c1bbda097177f73546.jar" />
     </item>
 
 </items>
