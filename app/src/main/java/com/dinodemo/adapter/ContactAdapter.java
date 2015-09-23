@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 import com.dinodemo.activity.widget.RecyclerViewFastScroller;
 import java.util.ArrayList;
@@ -15,11 +16,20 @@ import java.util.Random;
 /**
  * Created by Coder on 2015/9/22.
  */
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> implements
-    RecyclerViewFastScroller.BubbleTextGetter{
+public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder>
+    implements RecyclerViewFastScroller.BubbleTextGetter {
   private static final int SIZE = 200;
   private Context mContext;
   private List<String> items;
+  private OnItemClickListener mOnItemClickListener;
+
+  public interface OnItemClickListener {
+    void onItemClick(View view, int position);
+  }
+
+  public void setOnItemClickListener(OnItemClickListener listener) {
+    this.mOnItemClickListener = listener;
+  }
 
   public ContactAdapter() {
     List<String> items = new ArrayList<>();
@@ -31,13 +41,26 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
   }
 
   @Override public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
+    View view = LayoutInflater.from(parent.getContext())
+        .inflate(android.R.layout.simple_list_item_1, parent, false);
     return new ViewHolder(view);
   }
 
-  @Override public void onBindViewHolder(ViewHolder holder, int position) {
+  @Override public void onBindViewHolder(final ViewHolder holder, int position) {
     String text = items.get(position);
     holder.setText(text);
+    setUpItemEvent(holder);
+  }
+
+  private void setUpItemEvent(final ViewHolder holder) {
+    if (mOnItemClickListener!=null){
+      holder.itemView.setOnClickListener(new View.OnClickListener() {
+        @Override public void onClick(View v) {
+          int layoutPosition = holder.getLayoutPosition();
+          mOnItemClickListener.onItemClick(holder.itemView, layoutPosition);
+        }
+      });
+    }
   }
 
   @Override public int getItemCount() {

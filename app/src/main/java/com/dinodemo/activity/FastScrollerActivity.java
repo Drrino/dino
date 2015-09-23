@@ -47,10 +47,10 @@ public class FastScrollerActivity extends AppCompatActivity {
 
   private void initRecycleView() {
     //设置RecyclerView的布局管理
+    initAdapter();
     LinearLayoutManager linearLayoutManager =
         new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
     recyclerView.setLayoutManager(linearLayoutManager);
-    mAdapter = new ContactAdapter();
     recyclerView.setAdapter(mAdapter);
     fastScroller.setRecyclerView(recyclerView);
     fastScroller.setViewsToUse(R.layout.recycle_scroller, R.id.fastScroller_bubble,
@@ -72,6 +72,15 @@ public class FastScrollerActivity extends AppCompatActivity {
     });
   }
 
+  private void initAdapter() {
+    mAdapter = new ContactAdapter();
+    mAdapter.setOnItemClickListener(new ContactAdapter.OnItemClickListener() {
+      @Override public void onItemClick(View view, int position) {
+        Toast.makeText(FastScrollerActivity.this, position + "", Toast.LENGTH_SHORT).show();
+      }
+    });
+  }
+
   private void initFab() {
     fab = (FloatingActionButton) findViewById(R.id.fab);
     fab.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +88,8 @@ public class FastScrollerActivity extends AppCompatActivity {
         Snackbar.make(findViewById(R.id.coordinator), "This is SnackBar", Snackbar.LENGTH_SHORT)
             .setAction("Ok", new View.OnClickListener() {
               @Override public void onClick(View v) {
-                Toast.makeText(FastScrollerActivity.this, "SnackBar Action", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FastScrollerActivity.this, "SnackBar Action", Toast.LENGTH_SHORT)
+                    .show();
               }
             })
             .show();
