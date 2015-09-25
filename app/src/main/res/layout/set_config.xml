@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfd8dc">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="设置"
+        android:textSize="36sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="联系我们"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_gameLines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="游戏行列"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_gameLines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gameLines"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_config"
+        android:text="4"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_targetGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_gameLines"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="目标数字"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_targetGoal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_config"
+        android:text="2048"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@id/tv_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:background="@drawable/button_config"
+        android:text="返回"
+        android:layout_marginBottom="15dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignRight="@+id/view2"
+        android:background="@drawable/button_config"
+        android:layout_marginBottom="15dp"
+        android:text="完成"
+        android:textSize="24sp" />
+
+</RelativeLayout>

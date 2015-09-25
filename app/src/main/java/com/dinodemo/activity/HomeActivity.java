@@ -17,6 +17,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
   @Bind(R.id.item_2) CardView cv2;
   @Bind(R.id.item_3) CardView cv3;
   @Bind(R.id.item_4) CardView cv4;
+  @Bind(R.id.item_5) CardView cv5;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     cv2.setOnClickListener(this);
     cv3.setOnClickListener(this);
     cv4.setOnClickListener(this);
+    cv5.setOnClickListener(this);
   }
 
   @Override public void onClick(View v) {
@@ -41,6 +43,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.item_4:
         startActivity(new Intent().setClass(HomeActivity.this, FastScrollerActivity.class));
+        break;
+      case R.id.item_5:
+        startActivity(new Intent().setClass(HomeActivity.this, GameActivity.class));
         break;
     }
   }
