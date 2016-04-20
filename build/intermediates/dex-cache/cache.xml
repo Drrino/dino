@@ -2,95 +2,32 @@
 <items version="2" >
 
     <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-4a9e64728a33722fc05989d0d4e6de9aff2f21cd.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\classes-696367c458a88dccf10d23c8e1187eb8c35142bc.jar" />
     </item>
     <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-85e612d763f85b6a7ed8874be7495cfe6337f48b.jar" />
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\classes-f166f18c5c67e615d5816afb6ebf8ffbad05517f.jar" />
     </item>
     <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\DinoDemo\headsupcompat\unspecified\jars\classes.jar"
+        jar="D:\ASworkspace\dino\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="890e9c05f1fde30ee003c52ff4e122764fa358c9">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-64c4c73892afa7ff285fb6e728bc6b8e1b31c1c9.jar" />
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-c7c11d5b1e1b3e30ffd8e0a415a593fb8c20b7b3.jar" />
     </item>
     <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.0\jars\classes.jar"
+        jar="F:\1.4SDKs\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-41674a4a26fb8a7705b4e7c38897cf866b1db8a1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Coder\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\library-2.4.0-0cdf1d0f14db8148ebdabb9970440bc7b397a2ea.jar" />
-    </item>
-    <item
-        jar="D:\Android Studio\1.4SDKs\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-d11e577765a6659170c5433d97002524bebf0122.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\libs\MapApiServices.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="e84628aa8eea7b9892768f19c41dbe02abc7f666">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\MapApiServices-8d372fd74d79e12ed17cf780dc88410ee309ff97.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.github.deano2390\MaterialShowcaseView\1.0.5\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="6172e15e8996bf51242aa911b932887509edd6a0">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-1eac4324ca0d7a48701e82e29357a4657a8d41e4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Coder\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-fb6f93b0ffb09c3a3a93366e8284bb1f9becf622.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\libs\AMap_ Location_v1.4.0_20150830.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="77864ab8aa4e06bec7125d37edc68a5afd2d6930">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\AMap_ Location_v1.4.0_20150830-898de6f5a8bc28167dfd176395abc155abd0162f.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-5fec7f7f5805fc9bffe024039c354f89fc7a1118.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\classes-0a039f49817b01426e5f0ed0b027b157af683629.jar" />
-    </item>
-    <item
-        jar="D:\ASworkspace\DinoDemo\app\libs\Android_Map_2.5.1.20150827.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="97509736599b1c60770a115c3a63c549b103845c">
-        <dex dex="D:\ASworkspace\DinoDemo\app\build\intermediates\pre-dexed\debug\Android_Map_2.5.1.20150827-e88bad87ef456cfbaeb9994ddc09c6a321b26814.jar" />
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\ASworkspace\dino\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-5a54d1dc90fe26ab157538c1bbda097177f73546.jar" />
     </item>
 
 </items>

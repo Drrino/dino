@@ -15,14 +15,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="输入起点："
+        android:text="@string/toStart"
         android:textSize="18sp"
         />
     <EditText
         android:id="@+id/setStart"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="东善桥林场"
+        android:hint="@string/inputStart"
         android:gravity="center_horizontal"
         android:textColor="@color/location"
         />
@@ -30,7 +30,8 @@
           android:id="@+id/addStartPlaceBtn"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="设置起点"
+          android:text="@string/setStart"
+          android:layout_marginLeft="30dp"
           />
   </LinearLayout>
     <LinearLayout
@@ -43,22 +44,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="输入终点："
+            android:text="@string/toEnd"
             android:textSize="18sp"
             />
         <EditText
             android:id="@+id/setEnd"
-            android:text="东善桥卫生院"
+            android:hint="@string/inputEnd"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textColor="@color/location"
+            android:layout_marginLeft="8dp"
             />
         <Button
             android:id="@+id/addEndPlaceBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="设置终点"
+            android:text="@string/setEnd"
+            android:layout_marginLeft="30dp"
             />
     </LinearLayout>
     <RelativeLayout
@@ -78,20 +81,19 @@
             android:id="@+id/bus_rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="公交" />
+            android:text="@string/bus" />
 
         <RadioButton
             android:id="@+id/car_rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="驾车" />
+            android:text="@string/drive" />
 
         <RadioButton
             android:id="@+id/walk_rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="步行" />
+            android:text="@string/walk" />
 
     </RadioGroup>
     <Button

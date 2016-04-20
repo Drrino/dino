@@ -17,7 +17,7 @@ import com.dinodemo.utils.PrefUtils;
 public class SplashActivity extends AppCompatActivity {
   @Bind(R.id.iv) ImageView iv;
 
-  private static final long SPLASH_DELAY_MILLIS = 3000;
+  private static final long SPLASH_DELAY_MILLIS = 1000;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -28,15 +28,14 @@ public class SplashActivity extends AppCompatActivity {
         startAnim();
       }
     }, SPLASH_DELAY_MILLIS);
-
   }
 
   /**
    * 渐变动画
    */
   private void startAnim() {
-    AlphaAnimation alph = new AlphaAnimation(1,0);
-    alph.setDuration(3000);
+    AlphaAnimation alph = new AlphaAnimation(1, 0);
+    alph.setDuration(1500);
     alph.setFillAfter(true);//保持动画状态
     iv.startAnimation(alph);
     jump();
@@ -44,11 +43,11 @@ public class SplashActivity extends AppCompatActivity {
 
   //判断显示过splash
   private void jump() {
-    boolean isSet = PrefUtils.getBoolean(this,"is_show",false);
-    if (!isSet){
-      startActivity(new Intent(this,GuideActivity.class));
-    }else {
-      startActivity(new Intent(this, MapActivity.class));
+    boolean isSet = PrefUtils.getBoolean(this, "is_show", false);
+    if (!isSet) {
+      startActivity(new Intent(this, GuideActivity.class));
+    } else {
+      startActivity(new Intent(this, MainActivity.class));
     }
     finish();
   }
